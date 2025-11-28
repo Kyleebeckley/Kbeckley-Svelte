@@ -41,21 +41,3 @@
         {/each}
     </ul>
 </div>
-
-
-<style>
-ul { 
-    list-style: none;
-}
-
-input[type="checkbox"]{
-    height: 20px;
-    width: 20px;
-    accent-color: #ac7f1a;
-}
-
-li span.done{
-    text-decoration: line-through;
-    color: greenyellow;
-}
-</style>

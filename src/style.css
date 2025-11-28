@@ -1,30 +1,36 @@
 body {
     margin: 2vh;
-    font-family: sans-serif;
-    background: #f0f0f0;
+    background: #F6BD60;
+    color: #F7EDE2;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 .wrapper {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    font-family: "Momo Trust Display", sans-serif;
 }
 .left-side {
-    padding-right: 30px;
+    padding-right: 70px;
     margin-top: 25vh;
 }
 h1 {
     margin-bottom: 20px;
     text-align: center;
+    font-family: "Momo Trust Display", sans-serif;
 }
 
 /* This is editing the list */
 .todo-list {
     width: 100%;
     max-width: 400px;
-    background: #fff;
+    background: #71858C;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px #F7EDE2(1,1,1,1);
     margin-bottom: 20px;
 }
 
@@ -33,7 +39,9 @@ h1 {
 input {
 
     padding: 0.75em;
-    border: 1px solid #ccc;
+    border: 1px solid #F5CAC3;
+    background-color: #F5CAC3;
+    color: #F7EDE2;
     border-radius: 5px;
 }
 
@@ -42,8 +50,8 @@ button {
     margin-left: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #ac7f1a;
-    color: #fff;
+    background-color: #F5CAC3;
+    color: #F7EDE2;
     cursor: pointer;
 }
 
@@ -58,16 +66,16 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #F7EDE2;
 }
 
 li span.done {
     text-decoration: line-through;
-    color: greenyellow;
+    color: #F7EDE2;
 }
 
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    accent-color: #ac7f1a;
+    accent-color: #F6BD60;
 }
