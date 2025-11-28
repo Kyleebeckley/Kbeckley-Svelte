@@ -1,0 +1,73 @@
+body {
+    margin: 2vh;
+    font-family: sans-serif;
+    background: #f0f0f0;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.left-side {
+    padding-right: 30px;
+    margin-top: 25vh;
+}
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* This is editing the list */
+.todo-list {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+
+/* input and button */
+input {
+
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ac7f1a;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Todo list items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li span.done {
+    text-decoration: line-through;
+    color: greenyellow;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #ac7f1a;
+}
