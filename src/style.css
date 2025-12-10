@@ -1,7 +1,7 @@
 body {
     margin: 2vh;
-    background: #F6BD60;
-    color: #F7EDE2;
+    background: #011f4b;
+    color: #b3cde0;
     font-family: "Momo Trust Display", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -27,10 +27,10 @@ h1 {
 .todo-list {
     width: 100%;
     max-width: 400px;
-    background: #71858C;
+    background: #03396c;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px #F7EDE2(1,1,1,1);
+    box-shadow: 0 5px 15px #ffffff(1,1,1,1);
     margin-bottom: 20px;
 }
 
@@ -39,9 +39,9 @@ h1 {
 input {
 
     padding: 0.75em;
-    border: 1px solid #F5CAC3;
-    background-color: #F5CAC3;
-    color: #F7EDE2;
+    border: 1px solid #03396c;
+    background-color: #03396c;
+    color: #b3cde0;
     border-radius: 5px;
 }
 
@@ -50,8 +50,8 @@ button {
     margin-left: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #F5CAC3;
-    color: #F7EDE2;
+    background-color: #6497b1;
+    color: #03396c;
     cursor: pointer;
 }
 
@@ -66,16 +66,43 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 8px 0;
-    border-bottom: 1px solid #F7EDE2;
+    border-bottom: 1px solid #b3cde0;
 }
 
 li span.done {
     text-decoration: line-through;
-    color: #F7EDE2;
+    color: #b3cde0;
 }
 
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    accent-color: #F6BD60;
+    accent-color: #6497b1;
+}
+
+@media screen and (max-width: 975px) {
+    .wrapper {
+        display: block;
+    }
+    .left-side {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 390px;
+
+    }
+    .todo-list {
+        margin: 5vw auto;
+    }
+    input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+    }
+    form > div {
+        display: inline-block;
+    }
+    form button {
+        display: block;
+        margin-top: 1em;
+    }
 }
