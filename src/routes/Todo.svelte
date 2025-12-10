@@ -30,6 +30,7 @@
         }
 
         todoList = [...todoList,{
+            id: Date.now(),
             text: todoItem,
             done: false,
             category: todoCategory
@@ -39,8 +40,8 @@
         todoItem = '';
     }
 
-    function removeItem(index) {
-        todoList.splice(index,1);
+    function removeItem(id) {
+        todoList = todoList.filter(item => item.id !== id);
         updateList();
         sortLists();
     }
@@ -70,11 +71,11 @@
 <div class ="todo-list">
     <h2>High Priority</h2>
     <ul>
-        {#each highList as item, index}
+        {#each highList as item}
             <li>
                 <input type="checkbox" bind:checked={item.done} onchange= {updateList}>
                 <span class:done={item.done}>{item.text}</span>
-                <button type="button" onclick={() => removeItem(index)}>x</button>
+                <button type="button" onclick={() => removeItem(item,id)}>x</button>
             </li>
         {/each}
     </ul>
@@ -83,11 +84,11 @@
 <div class ="todo-list">
     <h2>Low Priority</h2>
     <ul>
-        {#each lowList as item, index}
+        {#each lowList as item}
             <li>
                 <input type="checkbox" bind:checked={item.done} onchange= {updateList}>
                 <span class:done={item.done}>{item.text}</span>
-                <button type="button" onclick={() => removeItem(index)}>x</button>
+                <button type="button" onclick={() => removeItem(item.id)}>x</button>
             </li>
         {/each}
     </ul>
